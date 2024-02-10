@@ -1,0 +1,12 @@
+.embeddedObject {
+    position: relative;
+    z-index: 0;
+}
+
+.embeddedObject .label {
+    color: #666666;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+    max-width: 1270px;
+    text-align: center;
+}

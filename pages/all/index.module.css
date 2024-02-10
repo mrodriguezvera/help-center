@@ -1,0 +1,11 @@
+.locations {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1rem;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.locations .country {
+    width: 13rem;
+}

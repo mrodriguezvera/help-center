@@ -1,0 +1,39 @@
+.header {
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 1rem);
+    z-index: 10;
+}
+
+.header .headerLeft {
+    align-items: center;
+    display: flex;
+}
+
+.header .headerRight {
+    align-items: center;
+    display: flex;
+    gap: 0.25rem;
+}
+
+.header .selector {
+    border-left: 1px solid silver;
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+}
+
+.marginRight {
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    .header .selector {
+        display: none;
+    }
+}

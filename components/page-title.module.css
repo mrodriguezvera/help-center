@@ -1,0 +1,10 @@
+.pageTitle {
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.mark {
+    background-color: #de411b;
+    height: 5px;
+    width: 25px;
+}

@@ -1,0 +1,63 @@
+body {
+  font-family: "Roboto", courier;
+  font-size: 14px;
+  margin: 0;
+  line-height: 22px;
+}
+
+body main {
+  margin: auto;
+  max-width: 800px;
+  padding: 1rem 1rem 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: normal;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table tbody tr td:first-of-type {
+    font-weight: 900;
+}
+
+table tbody tr td {
+    border: 1px solid;
+    padding: 0 0.5rem;
+}
+
+a {
+  color: #0078b5;
+}
+
+.page-not-found {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  body main {
+    font-size: .75rem;
+  }
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+/* scroll end */

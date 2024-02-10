@@ -1,0 +1,77 @@
+.container {
+    color: white;
+}
+
+.container .button {
+    align-items: center;
+    background-color: #de411b;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    font-weight: 300;
+    gap: 0.25rem;
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+}
+
+.container .button img {
+    filter: invert(100%);
+}
+
+.container .notificationsWrapper {
+     display: none;
+     left: 0;
+     padding: 0.5rem;
+     position: absolute;
+     right: 0;
+}
+
+.container:hover .notificationsWrapper {
+    display: block;
+}
+
+.container .notificationsWrapper .notifications .notification {
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+}
+
+.container .notificationsWrapper .notifications .notification.default {
+    background-color: #d7d7d7;
+    color: #333333;
+}
+
+.container .notificationsWrapper .notifications .notification.error {
+    background-color: #de411b;
+}
+
+.container .notificationsWrapper .notifications .notification.info {
+    background-color: #3889df;
+}
+
+.container .notificationsWrapper .notifications .notification.success {
+    background-color: #22b639;
+    
+}
+
+.container .notificationsWrapper .notifications .notification.warning {
+    background-color: #f0bb3f;
+    color: #333333;
+}
+
+.container .notificationsWrapper .notifications .notification a {
+    color: inherit;
+    font-weight: 900;
+}
+
+.container .notificationsWrapper .notifications .notification .title {
+    text-transform: uppercase;
+}
+
+.container .notificationsWrapper .notifications .notification .message {
+    font-weight: 300;
+}
+
+.container .notificationsWrapper .notifications .notification + .notification {
+    margin-top: 0.25rem;
+}

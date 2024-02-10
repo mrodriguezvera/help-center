@@ -1,0 +1,111 @@
+.tabSection {
+    align-items: center;
+    display: flex;
+}
+
+.tabSection .tabContainer {
+    overflow: auto;
+    width: 100%;
+}
+
+.tabSection .tabContainer .tabs {
+    align-items: center;
+    display: flex;
+}
+
+.tabSection .tabContainer .tabs .tab {
+    cursor: pointer;
+    padding: 0.5rem;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* style: button */
+
+.tabSection .tabContainer .tabs.button .tab {
+    color: #0078b5;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tabSection .tabContainer .tabs.button .tab:hover {
+    background-color: #5ec5f8;
+    color: white;
+}
+
+.tabSection .tabContainer .tabs.button .tab.selected {
+    background-color: #0078b5;
+    color: white;
+}
+
+/* style: default */
+
+.tabSection .tabContainer .tabs.default .tab {
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+}
+
+.tabSection .tabContainer .tabs.default .tab:hover {
+    border-color: silver;
+}
+
+.tabSection .tabContainer .tabs.default .tab.selected {
+    border-color: #de411b;
+}
+
+/* style: wizard */
+
+.tabSection .tabContainer .tabs.wizard .tab {
+    background-color: silver;
+    padding: 0.5rem 2rem;
+}
+
+.tabSection .tabContainer .tabs.wizard .tab::after,
+.tabSection .tabContainer .tabs.wizard .tab::before {
+    border: 18px solid white;
+    border-right: none;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
+.tabSection .tabContainer .tabs.wizard .tab::before {
+    border-left-color: silver;
+    right: 0;
+}
+
+.tabSection .tabContainer .tabs.wizard .tab::after {
+    border-top-color: silver;
+    border-bottom-color: silver;
+    left: 0;
+}
+
+.tabSection .tabContainer .tabs.wizard .tab:hover {
+    background-color: #e9947e;
+    color: white;
+}
+
+.tabSection .tabContainer .tabs.wizard .tab:hover::before {
+    border-left-color: #e9947e;
+}
+
+.tabSection .tabContainer .tabs.wizard .tab:hover::after {
+    border-top-color: #e9947e;
+    border-bottom-color: #e9947e;
+}
+
+.tabSection .tabContainer .tabs.wizard .tab.selected {
+    background-color: #de411b;
+    color: white;
+}
+
+.tabSection .tabContainer .tabs.wizard .tab.selected::before {
+    border-left-color: #de411b;
+}
+
+.tabSection .tabContainer .tabs.wizard .tab.selected::after {
+    border-top-color: #de411b;
+    border-bottom-color: #de411b;
+}

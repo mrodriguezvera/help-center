@@ -1,0 +1,75 @@
+
+.mobileMenu {
+    display: none;
+}
+
+.floatingMenu .trigger {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+.floatingMenu .menuWrapper {
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+}
+
+.floatingMenu:hover .trigger {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.floatingMenu:hover .menuWrapper {
+    display: block;
+}
+
+.floatingMenu .menuWrapper .menu {
+   background-color: #444;
+   margin-top: 0.5rem;
+   padding: 1rem;
+}
+
+.floatingMenu .menuWrapper .menu .title {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.floatingMenu .menuWrapper .menu ul {
+    list-style-type: none;
+}
+
+.floatingMenu .menuWrapper .menu ul li a {
+    color: silver;
+    text-decoration: none;
+}
+
+.floatingMenu .menuWrapper .menu ul li a:hover {
+    color: white;
+}
+
+.floatingMenu .menuWrapper .menu .selectors {
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    gap: 0.25rem;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+.floatingMenu .menuWrapper .menu .selectors img {
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 767px) {
+    .mobileMenu {
+        display: block;
+    }
+}

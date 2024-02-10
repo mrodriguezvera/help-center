@@ -1,0 +1,16 @@
+.footer {
+    background-color: white;
+    border-top: 1px solid #efefef;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer .copyright {
+    padding: .25rem;
+    text-align: center;
+}
+
+.footer .copyright p {
+    margin: 0;
+}

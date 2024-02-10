@@ -1,0 +1,6 @@
+.info {
+    align-items: center;
+    color: inherit;
+    display: flex;
+    gap: 4px;
+}
